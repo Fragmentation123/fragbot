@@ -39,6 +39,9 @@ async def on_message(message):
           await message.channel.send('go to a bot channel {}'.format(message.author.name))
     if message.content.startswith('e!'):
           await message.channel.send('go to a bot channel {}'.format(message.author.name))
+    if message.content.startswith('&'):
+          await message.channel.send('go to a bot channel {}'.format(message.author.name))
+
 
 keep_alive()
 client.run(os.environ['token'])
